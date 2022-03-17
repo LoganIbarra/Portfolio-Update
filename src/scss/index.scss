@@ -1,4 +1,6 @@
 @import 'variables.scss';
+@import 'bootstrapClasses.scss';
+@import 'icons.scss';
 
 /* General Styles */
 body {
@@ -9,35 +11,153 @@ body {
     font-size: 1rem;
     font-weight: 400;
     color: $black;
-    background-color: $lightsand;
+    background-color: $undersea;
 }
 h1, h2 {
     margin-top: 4rem;
-    font-family: $league-gothic;    
-    font-size: 2.5rem;
-    font-weight: 400;
-    line-height: 1;
+    font-family: $league-gothic;
     color: $darkblue;
     text-transform: uppercase;
+    @media ( min-width: 768px ) {
+        margin-top: 5rem;
+    }
 }
-h3, h4 {
+h1 {        
+    font-size: 3.5rem;    
+    line-height: .892857;    
+    @media ( min-width: 768px ) {
+        font-size: 4rem;
+        line-height: .9375;
+    }
+}
+h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;    
+    line-height: 1;
+    @media ( min-width: 768px ) {
+        font-size: 3.5rem;    
+        line-height: .892857;
+    }
+}
+h3 {
     margin-top: 2.5rem;
+    margin-bottom: 1rem;
     font-size: 1.25rem;
     font-weight: 700;    
     color: $darkblue;
+    @media ( min-width: 768px ) {
+        font-size: 2rem;    
+        line-height: 1.25;
+    }
 }
-p {        
+p {    
+    margin-bottom: 0;
     font-size: .875rem;
     font-weight: 400;
-    line-height: 1.5;
-    color: $black;    
+    line-height: 1.714285;    
+    @media ( min-width: 768px ) {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    & + p {
+        margin-top: 1rem;
+    }
 }
-.btn-primary {
-    padding: 1rem;
-    font-size: .875rem;
-    font-weight: 600;
-    line-height: 1.25;
-    text-align: center;
-    color: $white;
-    background-color: $terracotta;
+a {
+    color: $terracotta;
+    font-weight: 700;
+    text-decoration: underline;
+    &:focus, &:hover {
+        text-decoration: none;
+    }
 }
+
+/* Header and Navigation */
+header {
+    max-width: 1204px;
+    padding: 1.5rem 12px;
+    margin: auto;
+    background-color: $lightsand;
+    @media ( min-width: 768px ) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 8px 1.5rem 24px;
+    }
+}
+
+nav {
+    display: none;
+    @media ( min-width: 768px ) {
+        display: block;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        
+        li{            
+            font-family: $league-gothic;
+            font-size: 2rem;
+            line-height: .9375;
+            color: $darkblue;
+            text-align: center;
+            text-transform: uppercase;
+            
+            &:not(:last-child) {
+                margin-right: 24px;
+            }
+        }        
+    }
+}
+.header_link {    
+    position: relative;
+    display: block;
+    padding: .75rem 16px;
+    color: $darkblue;
+    font-weight: 400;
+    text-decoration: none;
+    &::after {       
+        display: block;        
+        content: '';
+        height: 4px;
+        width: 100%;
+        margin-top: 4px;
+        background: $lightsand;
+    }
+    &:active {
+        color: $undersea;
+        &::after {
+            background: $leather;
+        }
+    }
+    &:focus, &:hover {
+        color: $darkblue;
+        &::after {
+            background: $goldenwheat;
+        }
+    }
+}
+
+/* Footer */
+footer {
+    max-width: 1204px;
+    margin: auto;
+    background-color: $lightsand;
+    padding: 2.5rem 0;
+}
+
+/* Layout Classes */
+.l-max-width > h2,
+.l-max-width > p,
+p.l-max-width {
+    max-width: 763px;
+}
+
+
+
+
+
+
