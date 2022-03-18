@@ -17,6 +17,12 @@
     padding-right: 12px;
     padding-left: 12px;
 }
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: $leather;
+    border: none;
+}
 .btn-primary {
     padding: 1rem;
     font-size: .875rem;
@@ -26,4 +32,34 @@
     text-align: center;
     color: $white;
     background-color: $terracotta;
+    text-decoration: none;    
+    &:focus,
+    &:hover {
+        background-color: $leather;
+    }
+}
+.card {
+    height: 100%;   
+    border: 1px solid rgba(172, 99, 79, 0.6);
+    box-shadow: $shadow;
+    border-radius: 3px;
+    background-color: $lightsand;
+    overflow: hidden;
+}
+.card-body {
+    padding: 1rem 12px 0;
+}
+.card-title {
+    margin-bottom: .5rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.card-text {    
+    line-height: 1.285715;
+}
+.card-footer {
+    padding: 1rem 12px 1.5rem;
+    border-top: none;
+    background-color: $lightsand;    
 }

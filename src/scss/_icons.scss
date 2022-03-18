@@ -1,21 +1,27 @@
 /* Icons */
 .icon {
     display: block;
-    width: 24px;
-    height: 0;
-    padding: 24px 0 0;
-    text-indent: -9999px;
-    background-size: 24px 48px;
-    background-position: 0 0;
-}
-.icon-lg {
-    width: 32px;
-    padding: 32px 0 0;
-    background-size: 32px 64px;
-}
-.icon-xl {
     width: 48px;
+    height: 0;
     padding: 48px 0 0;
+    text-indent: -9999px;
+    background-size: 48px 96px;
+    background-position: 0 0;     
+    &-social {
+        &:focus,
+        &:hover {
+            background-position: 0 -48px;
+        }
+        @media ( min-width: 768px ) {
+            width: 60px;
+            padding: 60px 0 0;
+            background-size: 60px 120px; 
+            &:focus,
+            &:hover {
+                background-position: 0 -60px;
+            }
+        }
+    }
 }
 .icon-logo {
     width: 117px;
@@ -27,4 +33,17 @@
         padding: 60px 0 0;
         background-size: 140px 60px;
     }
+}
+.icon-twitter {
+    background-image: url('images/twitter.svg');
+       
+}
+.icon-linkedin {
+    background-image: url('images/linkedin.svg');    
+}
+.icon-email {
+    background-image: url('images/email.svg');   
+}
+.icon-youtube {
+    background-image: url('images/youtube.svg');    
 }
