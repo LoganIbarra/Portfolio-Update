@@ -40,23 +40,20 @@
 }
 .card {
     height: 100%;   
-    border: 1px solid rgba(172, 99, 79, 0.6);
+    border: none;
     box-shadow: $shadow;
     border-radius: 3px;
     background-color: $lightsand;
     overflow: hidden;
 }
 .card-body {
-    padding: 1rem 12px 0;
+    padding: 1.5rem 12px;
 }
 .card-title {
     margin-bottom: .5rem;
-    line-height: 1.5;
-    font-size: 1rem;
+    line-height: 1.33334;
+    font-size: 1.125rem;
     font-weight: 600;
-}
-.card-text {    
-    line-height: 1.285715;
 }
 .card-footer {
     padding: 1rem 12px 1.5rem;
