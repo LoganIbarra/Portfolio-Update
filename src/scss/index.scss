@@ -1,233 +1,14 @@
 @import 'variables.scss';
+@import 'mixins.scss';
 @import 'bootstrapClasses.scss';
+@import 'general.scss';
 @import 'icons.scss';
+@import 'framework.scss';
 
-/* General Styles */
-body {
-    margin: 0;
-    line-height: 1.5;
-    text-align: left;
-    font-family: $open-sans;
-    font-size: 1rem;
-    font-weight: 400;
-    color: $black;    
-    background-color: $undersea;
-}
-h1, h2 {
-    margin-top: 4rem;
-    font-family: $league-gothic;
-    color: $darkblue;
-    text-transform: uppercase;
-    @media ( min-width: 768px ) {
-        margin-top: 5rem;
-    }
-}
-h1 {        
-    font-size: 3.5rem;    
-    line-height: .892857;    
-    @media ( min-width: 768px ) {
-        font-size: 4rem;
-        line-height: .9375;
-    }
-}
-h2 {
-    margin-bottom: 1rem;
-    font-size: 2.5rem;    
-    line-height: 1;
-    @media ( min-width: 768px ) {
-        font-size: 3.5rem;    
-        line-height: .892857;
-    }
-}
-h3 {
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    font-weight: 700;    
-    color: $darkblue;
-    @media ( min-width: 768px ) {
-        font-size: 2rem;    
-        line-height: 1.25;
-    }
-}
-p {    
-    margin-bottom: 0;
-    font-size: .875rem;
-    font-weight: 400;
-    line-height: 1.714285;    
-    @media ( min-width: 768px ) {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    & + p {
-        margin-top: 1rem;
-    }
-}
-a {
-    color: $terracotta;
-    font-weight: 700;
-    text-decoration: underline;
-    &:focus, &:hover {
-        text-decoration: none;
-    }
-}
-
-/* Header and Navigation */
-header {
-    max-width: 1204px;
-    padding: 1.5rem 12px;
-    margin: auto;
-    background-color: $lightsand;
-    @media ( min-width: 768px ) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1.5rem 8px 1.5rem 24px;
-    }
-}
-
-nav {
-    display: none;
-    @media ( min-width: 768px ) {
-        display: block;
-    }
-    ul{
-        display: flex;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        
-        li{            
-            font-family: $league-gothic;
-            font-size: 2rem;
-            line-height: .9375;
-            color: $darkblue;
-            text-align: center;
-            text-transform: uppercase;
-            
-            &:not(:last-child) {
-                margin-right: 24px;
-            }
-        }        
-    }
-}
-.header_link {    
-    position: relative;
-    display: block;
-    padding: .75rem 16px;
-    color: $darkblue;
-    font-weight: 400;
-    text-decoration: none;
-    &::after {       
-        display: block;        
-        content: '';
-        height: 4px;
-        width: 100%;
-        margin-top: 4px;
-        background: $lightsand;
-    }
-    &:active {
-        color: $undersea;
-        &::after {
-            background: $leather;
-        }
-    }
-    &:focus, &:hover {
-        color: $darkblue;
-        &::after {
-            background: $goldenwheat;
-        }
-    }
-}
-
-/* Footer */
-footer {
-    max-width: 1204px;
-    margin: auto;
-    background-color: $lightsand;
-    padding: 2.5rem 0;
-    @media ( min-width: 768px ) {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        padding: 6.25rem 0 3.75rem;
-    }
-}
-.social {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-    padding-left: 0;
-    list-style-type: none;
-    li {
-        margin-right: 2.5rem;
-        &:last-child {
-            margin-right: 0;
-            @media ( min-width: 768px ) {
-                margin-right: 8px;
-            }
-        }        
-    }
-}
-.footer_nav {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0.5rem;
-    padding-left: 0;
-    list-style-type: none;
-    li {
-        min-width: 72px;
-        margin-right: 1rem;        
-        text-align: center;
-        &:last-child {
-            margin-right: 0;
-        }
-        a {
-            display: block;
-            padding: .75rem;
-            font-size: .75rem;
-            line-height: 2;
-            color: $black;            
-        }
-    }
-}
-.copy {
-    text-align: center;
-    @media ( min-width: 768px ) {
-        padding-left: 24px;
-    }
-    
-}
-
-/* Layout Classes */
-.l-max-width > h2,
-.l-max-width > p,
-p.l-max-width {
-    max-width: 763px;
-}
-
-.small {
-    font-size: .75rem;
-    line-height: 2;    
-}
-
+/* Project Cards */
 .casestudy {
     .col-12 {
-        margin-top: 1.5rem;
-        &:first-child {
-            margin-top: 0;
-        }
-        @media ( min-width: 576px ) {
-            margin-top: 0;
-            &:last-child {
-                margin-top: 1.5rem;
-                @media ( min-width: 992px ) {
-                    margin-top: 0;
-                }
-            }
-        }        
+        margin-top: 1.5rem;               
     }
     a {
         display: block;
@@ -237,7 +18,7 @@ p.l-max-width {
         &:focus,
         &:hover {            
             .btn-primary {
-                background-color: $leather;                
+                background-color: $terracotta;                
             }            
         }
     }   
@@ -259,16 +40,18 @@ p.l-max-width {
     transform: translateX(-274.5px);
 }
 .btn-wrap {
-    margin: 2.5rem auto;
+    padding: 2.5rem 0;
     text-align: center;
     @media ( min-width: 768px ) {
         text-align: left;
     }
 }
 
+/* Quote Section */
 .testimonials {    
     figure {
-        margin: 2.5rem 0 0;
+        margin: 0;
+        padding-top: 2.5rem;
     }
     blockquote {
         position: relative;
@@ -316,8 +99,56 @@ p.l-max-width {
     }
 }
 
+/* Case Study Header Section */
+.breakdown {
+    margin-bottom: 2.5rem;
+    padding: 4rem 0 2.5rem;
+    border-bottom: 1px solid $goldenwheat;
+    line-height: 0;
+}
 
+/* Video Button */
+.video {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 1rem;
+    &:focus,
+    &:hover {
+        .icon-youtube {
+            background-position: 0 -24px;
+            @media ( min-width: 768px ) {
+                background-position: 0 -32px;
+            }
+        }
+    }
+    span {
+        margin-left: 8px;
+        @include fontGrow;
+    }
+}
 
+/* Icon List Display */
+.icon-list {
+    margin: 0;
+    padding: .5rem 0 1.5rem;    
+    list-style-type: none;
+    li {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        .icon {
+            flex: 0 0 24px;
+            margin: 8px;
+            @media ( min-width: 768px ) {
+                flex: 0 0 32px;
+            }
+        }
+        span {
+            margin-left: 8px;
+            @include fontGrow;
+        }
+    }
+}
 
 
 

@@ -1,13 +1,16 @@
 /* Icons */
 .icon {
     display: block;
-    width: 48px;
+    width: 24px;
     height: 0;
-    padding: 48px 0 0;
+    padding: 24px 0 0;
     text-indent: -9999px;
-    background-size: 48px 96px;
-    background-position: 0 0;     
+    background-size: 24px 48px;
+    background-position: 0 0;
     &-social {
+        width: 48px;
+        padding: 48px 0 0;
+        background-size: 48px 96px;
         &:focus,
         &:hover {
             background-position: 0 -48px;
@@ -20,6 +23,14 @@
             &:hover {
                 background-position: 0 -60px;
             }
+        }
+    }
+    &-display {
+        background-size: 24px 24px;
+        @media ( min-width: 768px ) {
+            width: 32px;
+            padding: 32px 0 0;
+            background-size: 32px 32px;
         }
     }
 }
@@ -35,8 +46,7 @@
     }
 }
 .icon-twitter {
-    background-image: url('images/twitter.svg');
-       
+    background-image: url('images/twitter.svg'); 
 }
 .icon-linkedin {
     background-image: url('images/linkedin.svg');    
@@ -45,5 +55,25 @@
     background-image: url('images/email.svg');   
 }
 .icon-youtube {
-    background-image: url('images/youtube.svg');    
+    background-image: url('images/youtube.svg');
+    @media ( min-width: 768px ) {
+        width: 32px;
+        padding: 32px 0 0;
+        background-size: 32px 64px;
+    }
+}
+.icon-dollar {
+    background-image: url('images/dollar.svg');   
+}
+.icon-calendar {
+    background-image: url('images/calendar.svg');   
+}
+.icon-puzzle {
+    background-image: url('images/puzzle.svg');   
+}
+.icon-pencil {
+    background-image: url('images/pencil.svg');   
+}
+.icon-sliders {
+    background-image: url('images/sliders.svg');   
 }

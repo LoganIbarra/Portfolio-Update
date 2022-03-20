@@ -31,11 +31,11 @@
     border: none;
     text-align: center;
     color: $white;
-    background-color: $terracotta;
+    background-color: $leather;
     text-decoration: none;    
     &:focus,
     &:hover {
-        background-color: $leather;
+        background-color: $terracotta;
     }
 }
 .card {
