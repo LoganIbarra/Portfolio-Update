@@ -150,5 +150,47 @@
     }
 }
 
+/* Insight Cards with Icons */
+.insight_container {
+    padding: 1rem 0 2.5rem;
+    text-align: center;          
+}
+.insight_card {   
+    margin-top:1.5rem;    
+    &-inner {
+        min-height: 100%;
+        padding: 1rem;
+        border-radius: 3px;
+        box-shadow: $shadow;
+    }
+    .icon {
+        background-size: 40px 40px;
+        width: 40px;
+        padding: 40px 0 0;
+        margin: .5rem auto;
+    }
+     &-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: $darkblue;
+    }
+}
+
+/* Insight List */
+.insight_list {
+    padding: 0 0 1.5rem 8px;    
+    &-item {
+        padding-top: 1rem;
+        .takeaway {
+            font-size: 1rem;
+            font-weight: 700;
+            color: $darkblue;
+            & + p {
+                padding-top: .25rem;
+            }
+        }
+    }    
+}
+
 
 
