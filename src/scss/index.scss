@@ -19,8 +19,11 @@
         &:hover {            
             .btn-primary {
                 background-color: $terracotta;                
-            }            
-        }
+            }
+            .is-small .btn-link {
+                text-decoration: none;            
+            }
+        }        
     }   
     .btn-primary {        
         padding: .75rem 16px;        
@@ -31,6 +34,14 @@
     width: 100%;
     height: 245px;
     overflow: hidden;    
+}
+.is-small {
+    .img_wrap {
+        height: 170px;
+    }
+    .card-body {
+        padding: 1.5rem 12px 0 0;       
+    }
 }
 .card-img-top {
     position: relative;
@@ -44,6 +55,24 @@
     text-align: center;
     @media ( min-width: 768px ) {
         text-align: left;
+    }
+}
+.card-footer .btn-link {
+    position: relative;
+    padding: 0 24px 0 0;
+    color: $leather;
+    font-size: .875rem;    
+    font-weight: 600;
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url('images/rightchevron.svg');
+        background-size: 48px 48px;
+        background-position: -12px 0;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -192,5 +221,11 @@
     }    
 }
 
-
+.more_work {
+    margin-top: 4rem;
+    border-top: 1px solid $goldenwheat;
+    @media ( min-width: 768px ) {
+        margin-top: 5rem;        
+    }
+}
 
