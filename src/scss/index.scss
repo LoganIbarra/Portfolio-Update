@@ -3,12 +3,16 @@
 @import 'bootstrapClasses.scss';
 @import 'general.scss';
 @import 'icons.scss';
+@import 'resume.scss';
 @import 'framework.scss';
 
 /* Project Cards */
 .casestudy {
     .col-12 {
-        margin-top: 1.5rem;               
+        margin-top: 1.5rem;
+        &.is-active {
+            display: none;
+        }
     }
     a {
         display: block;
