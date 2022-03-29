@@ -101,3 +101,14 @@
 .icon-gem {
     background-image: url('images/gem.svg');   
 }
+.icon-download {
+    background-image: url('images/download.svg');
+    width: 32px;
+    padding: 32px 0 0;
+    background-size: 32px 64px;     
+    @media ( min-width: 768px ) {
+        width: 32px;
+        padding: 32px 0 0;
+        background-size: 32px 64px;
+    }
+}
