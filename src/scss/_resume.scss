@@ -1,15 +1,53 @@
 .resume_container {
-    header{
+    .resume_withlink {
+        @media ( min-width: 576px ) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4rem 0;           
+            h1,
+            .video {
+                padding: 0;
+            }
+        }
+    }
+    .name_contain {
         padding-top: 1.5rem;
+        @media ( min-width: 768px ) {
+            padding-top: 0;
+        }
     }
     .name {
         padding-top: 0;
         font-size: 2.5rem;
+        @media ( min-width: 768px ) {
+            font-size: 3rem;
+            padding-top: .25rem;
+        }
     }
     h2 {
         font-size: 2rem;
-        padding-top: 2rem;
+        padding-top: 2.5rem;
         padding-bottom: .5rem;
+    }
+    h3 {
+        font-size: 1rem;
+        padding: 1.5rem 0 .5rem;
+        span {
+            display: block;
+            @media ( min-width: 768px ) {
+                display: inline-block;
+            }
+            &:last-child { 
+                padding-top: .5rem;
+                font-style: italic;                
+                @media ( min-width: 768px ) {
+                    padding-top: 0;
+                    float: right;
+                    font-style: normal;
+                }
+            }
+        }
     }
     .title {
         padding-bottom: 1.5rem;
@@ -17,7 +55,53 @@
         font-size: 1rem;        
         font-weight: 600;        
     }
+    ul {
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style-type: none;
+        li {
+            @include fontGrow;            
+            & + li {
+                padding-top: .25rem;
+            }
+        }
+    }
     p + p {
-        padding-top: .5rem;
+        padding-top: .25rem;
+    }
+}
+
+.connect_items {
+    p {
+        word-break: break-all;
+        @include fontGrow;
+    }
+}
+
+.date {
+    span {
+        display: block;
+        @media ( min-width: 768px ) {
+            display: inline-block;
+            font-size: .875rem;
+            line-height: 1.714285;
+            font-style: italic;
+        }
+        &:last-child {            
+            font-style: italic;                
+            @media ( min-width: 768px ) {                
+                float: right;
+            }
+        }
+    }
+}
+.resume_container .tasks {
+    list-style-type: disc;
+    padding-top: .5rem;
+    padding-left: 2rem;
+    li {
+        & + li {
+            padding-top: .5rem;
+        }
     }
 }
