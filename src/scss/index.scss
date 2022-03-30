@@ -236,3 +236,28 @@
     }
 }
 
+
+/* Back to Top Button */
+.back_to_top {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: $undersea;
+    text-indent: -9999px;
+    &::after {
+        position: absolute;
+        content: '';
+        height: 24px;
+        width: 24px;
+        background-image: url('images/upchevron.svg');
+        background-size: 24px 24px;
+        background-position: 0 0;
+        top: 50%;
+        margin-top: -12px;
+        left: 50%;
+        margin-left: -12px;
+    }
+}
