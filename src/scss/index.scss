@@ -240,7 +240,8 @@
 
 /* Back to Top Button */
 .back_to_top {
-    position: relative;
+    position: fixed;
+    opacity: 0;
     width: 40px;
     height: 40px;
     padding: 0;
@@ -248,6 +249,23 @@
     border-radius: 50%;
     background-color: $undersea;
     text-indent: -9999px;
+    right: 12px;
+    bottom: -36px;
+    transition: opacity 200ms, bottom 200ms;
+
+    @media ( min-width: 768px ) {
+        right: 24px;
+    }
+
+    &.is-visible {
+        opacity: 1;
+        bottom: 12px;
+
+        @media ( min-width: 768px ) {
+            bottom: 24px
+        }
+    }
+
     &::after {
         position: absolute;
         content: '';
