@@ -4,6 +4,7 @@
 @import 'general.scss';
 @import 'icons.scss';
 @import 'resume.scss';
+@import 'backtotop.scss';
 @import 'framework.scss';
 
 /* Project Cards */
@@ -70,7 +71,7 @@
     &::after {
         content: '';
         position: absolute;
-        background-image: url('images/rightchevron.svg');
+        background-image: url('images/icons/rightchevron.svg');
         background-size: 48px 48px;
         background-position: -12px 0;
         top: 0;
@@ -104,7 +105,7 @@
             top: 50%;
             margin-top: -16px;
             left: -61px;
-            background-image: url('images/openquote.svg');
+            background-image: url('images/icons/openquote.svg');
             background-size: 45px 32px;
             background-position: 0 0;
             width: 45px;
@@ -229,6 +230,7 @@
     }    
 }
 
+/* View More Work Cards */
 .more_work {
     margin-top: 4rem;
     border-top: 1px solid $goldenwheat;
@@ -237,51 +239,38 @@
     }
 }
 
-
-/* Back to Top Button */
-.back_to_top {
-    position: fixed;
-    opacity: 0;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border: none;
-    border-radius: 50%;
-    background-color: $undersea;
-    text-indent: -9999px;
-    right: 12px;
-    bottom: -36px;
-    transition: opacity 200ms, bottom 200ms;
-
-    @media ( min-width: 768px ) {
-        right: 24px;
-    }
-    @media ( min-width: 1200px ) {
-        transform: translateX(-50%);
-        margin-left: 20px;
-        right: auto;
-    }
-
-    &.is-visible {
-        opacity: 1;
-        bottom: 12px;
-
-        @media ( min-width: 768px ) {
-            bottom: 24px
-        }
-    }
-
-    &::after {
-        position: absolute;
-        content: '';
-        height: 24px;
-        width: 24px;
-        background-image: url('images/upchevron.svg');
-        background-size: 24px 24px;
-        background-position: 0 0;
-        top: 50%;
-        margin-top: -12px;
+/* Images & Hero Banners */
+.hero_container {
+    padding-top: 2.5rem;
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    img {
+        position: relative;
+        top: 0;
         left: 50%;
-        margin-left: -12px;
+        width: 1156px;
+        transform: translateX(-578px);
+    }
+}
+.img_container {
+    max-width: 100%;
+    padding-top: 2.5rem;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+figure {
+    max-width: 763px;
+    padding-top: 2.5rem;
+    img {
+        display: block;
+        width: 100%;        
+    }
+    figcaption {
+        padding-top: .5rem;
+        font-style: italic;
     }
 }

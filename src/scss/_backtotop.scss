@@ -1,0 +1,47 @@
+/* Back to Top Button */
+.back_to_top {
+    position: fixed;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: $undersea;
+    text-indent: -9999px;
+    right: 12px;
+    bottom: -36px;
+    transition: opacity 200ms, bottom 200ms;
+
+    @media ( min-width: 768px ) {
+        right: 24px;
+    }
+    @media ( min-width: 1200px ) {
+        transform: translateX(-50%);
+        margin-left: 20px;
+        right: auto;
+    }
+
+    &.is-visible {
+        opacity: 1;
+        bottom: 12px;
+
+        @media ( min-width: 768px ) {
+            bottom: 24px
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        height: 24px;
+        width: 24px;
+        background-image: url('images/icons/upchevron.svg');
+        background-size: 24px 24px;
+        background-position: 0 0;
+        top: 50%;
+        margin-top: -12px;
+        left: 50%;
+        margin-left: -12px;
+    }
+}
