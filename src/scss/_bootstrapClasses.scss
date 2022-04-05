@@ -67,6 +67,16 @@
     padding-top: 2.5rem;
     padding-bottom: 1rem;
 }
+.carousel-inner {
+    width: 88%;
+    margin: auto;
+}
 .carousel-indicators {
     bottom: -39px;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 6%;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: $undersea;
 }
