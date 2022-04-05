@@ -64,15 +64,32 @@
 /* Carousel */
 .carousel {
     margin-bottom: 39px;
-    padding-top: 2.5rem;
-    padding-bottom: 1rem;
+    padding-top: 2.5rem;    
 }
 .carousel-inner {
     width: 88%;
     margin: auto;
 }
+.carousel-item{
+    img {
+        max-height: 370px;
+        margin-bottom: 96px;
+    }
+}
+.carousel-caption {
+    padding-bottom: 0;
+    right: 10%;
+    left: 10%;
+    h5 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: .875rem;
+    }
+}
 .carousel-indicators {
     bottom: -39px;
+    margin-bottom: 1.5rem;
 }
 .carousel-control-next, .carousel-control-prev {
     width: 6%;

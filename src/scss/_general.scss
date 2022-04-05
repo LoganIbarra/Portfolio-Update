@@ -58,6 +58,9 @@ p {
         padding-top: 1rem;
     }
 }
+figure + p {
+    padding-top: 1.5rem;
+}
 a {
     color: $terracotta;
     font-weight: 700;
