@@ -11,12 +11,19 @@
                 <section id="#cooking" class="l-max-width">
                     <h1>Cooking With Roux</h1>
                     <div class="breakdown">
-                        <p><strong>Role:</strong> UX Research and Design</p>
+                        <p><strong>Role:</strong> UX Research and Voice Interface Design</p>
                         <p><strong>Client:</strong> CareerFoundry UX Design (Academic)</p>
-                        <p><strong>Tools:</strong> Figma, Miro, Balsamiq, Procreate, Usability Hub, Optimal Sort, Google Forms, Google Sheets</p> <a href="https://www.youtube.com/watch?v=qfit-nKxUls" class="video"><i class="icon icon-youtube">YouTube</i><span>Watch a video of the prototype</span></a>                        
+                        <p><strong>Timeline:</strong> 3 weeks</p>
+                        <p><strong>Tools:</strong> Figma, Alexa Developer Console, Miro, Google Sheets</p>
                     </div>
-                    <p>A travel app that provides custom itineraries from local guides or travel agents.</p> 
-                    <p>Travelers submit their preferences and are provided with itineraries and prices from available partners.</p>
+                    <p>Designed an Alexa skill that allowed users to find and cook recipes with voice navigation only.</p>
+                    <p><i>Considerations:</i> Some features were written into sample dialogues that were not written as part of the final scripts due to time limitations.</p>
+                    <p><i>Assumptions - Due to time limitations, assumptions were made for the following:</i></p>
+                    <ul>
+                        <li>Users of the app would be for the creation of a persona, Morgan</li>
+                        <li>Speaking style of users for the creation of the system persona, Roux</li>
+                        <li>General user needs prior to interviews</li>
+                    </ul>
                     
                     <div class="hero_container">
                         <img srcset="" src="" alt="Together Forward Travel High Fidelty Mocks">
@@ -25,18 +32,115 @@
             
                 <section id="#define" class="l-max-width">
                     <h2>Define</h2>
-                    <p>I formulated a list of possible problems the app could solve for our travelers and how it could be useful.</p>
-                    <p>I hypothesized that our travelers&#8230;</p>
-                    <ul class="icon-list">
-                        <li><i class="icon icon-display icon-dollar">Dollar Sign</i><span>Find a travel agent expensive</span></li>
-                        <li><i class="icon icon-display icon-calendar">Calendar</i><span>Don’t want to adhere to a tour schedule for the whole trip</span></li>
-                        <li><i class="icon icon-display icon-puzzle">Puzzle Piece</i><span>Have unique interests that aren’t catered to with other itineraries</span></li>
-                        <li><i class="icon icon-display icon-pencil">Pencil</i><span>Don’t feel confident in their ability to research and plan</span></li>
-                        <li><i class="icon icon-display icon-sliders">Sliders</i><span>Desire customization</span></li>
-                    </ul>
+                    <p>I first established both my user persona, Morgan and my system persona, Roux to reference throughout the project.</p>
+                    
+                    <figure>
+                        <img srcset="images/tft/shawn_persona2x.jpg 2x" src="images/tft/shawn_persona.jpg" alt="Shawn Persona">
+                        <figcaption>Morgan, Proto-Persona for Cooking With Roux</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img srcset="images/tft/shawn_persona2x.jpg 2x" src="images/tft/shawn_persona.jpg" alt="Shawn Persona">
+                        <figcaption>Roux, System Persona for Cooking With Roux</figcaption>
+                    </figure>
+                    
+                    <p>User needs and stories were defined for Morgan, focusing on key functionalities they might need during daily interactions with Roux. Some examples of user needs and stories were:</p>
+                    
+                    <div class="list_box">
+                        <p>Provide recipes for breakfast, lunch, dinner, and snacks:</p>
+                        <ul>
+                            <li>As a busy professional, I want to search for simple breakfast recipes on the weekend so I can maximize my free time</li>
+                            <li>As a user, I want to find recipes that can be utilized for meal prep or leftovers for lunches so I can save time getting ready in the morning</li>
+                            <li>As Morgan, I want to find new dinner recipes to prepare so I don’t keep falling back to my same, easy meals after a long day</li>
+                            <li>When I am driving home from work, I want to be provided dinner recipe options so I can stop by the store and grab ingredients if necessary</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="list_box">
+                        <p>Use the recipe while cooking:</p>
+                        <ul>
+                            <li>While preparing my meal, I want ingredients listed to me in groupings so that I don’t get overwhelmed or have to listen to long lists of items</li>
+                            <li>As Morgan, I want instructions provided in a sequential, efficient fashion so that I feel confident I’m doing things correctly</li>
+                            <li>As a user, I want the option to repeat any instructions in the event I need clarification or don’t hear it properly</li>
+                            <li>As a person who is multitasking, I want to be the one to push the instructions forward when I’m ready so I can prepare the meal at my own pace</li>
+                            <li>As a user, I want clear, descriptive instructions so I can more easily understand what I’m trying to achieve</li>
+                        </ul>
+                    </div>
+                    
+                    <p>I then wrote sample dialogues between Morgan and Roux. This would help me consider future design choices and necessary functionalities. A selection of sample dialogues included:</p>
+                    
+                    <div class="list_box">
+                        <p>As a busy professional, I want to search for simple breakfast recipes on the weekend so I can maximize my free time.</p>
+                        <ul>
+                            <li>U: Recommend a recipe for breakfast.</li>
+                            <li>S: Certainly! We can prepare a tuna frittata, a hearty egg dish with potatoes and dollops of sour cream baked in. Cook time is 25 minutes. How does this sound?</li>
+                            <li>U: Can you recommend something faster?</li>
+                            <li>S: Of course. I have a recipe for avocado toast, topped with a fried egg and sprouts. Cook time is 10 minutes. Say ‘Get Started’ or ‘More Options’.</li>
+                            <li>U: Get started.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="list_box">
+                        <p>As a user, I want the option to repeat any instructions in the event I need clarification or don’t hear it properly.<br><i>User is progressing through a recipe with the help of the assistant.</i></p>
+                        <ul>
+                            <li>S: Step two, add diced potatoes to heated pan with olive oil and cook until they start to brown.</li>
+                            <li>U: (Alt 1) Repeat.</li>
+                            <li>U: (Alt 2) Repeat that.</li>
+                            <li>U: (Alt 3) Repeat step two.</li>
+                            <li>S: Step two, add diced potatoes to heated pan with olive oil and cook until they start to brown.</li>
+                            <li><i>User completes step and is ready to proceed.</i></li>
+                            <li>U: (Alt 1) Next.</li>
+                            <li>U: (Alt 2) Next step.</li>
+                        </ul>
+                    </div>
+                    
+                    <p>Expanding on my sample dialogues, I considered what a full experience between Morgan and Roux might look like including multiple requests.</p>
+                    
+                    <figure>
+                        <img srcset="images/tft/shawn_persona2x.jpg 2x" src="images/tft/shawn_persona.jpg" alt="Shawn Persona">
+                        <figcaption>Example conversation between our user, Morgan, and Roux, the system persona.</figcaption>
+                    </figure>
+                    
+                    <p>Using this, I established a user flow for Cooking With Roux. <a href="">View the user flow here</a>.</p>
+                    
+                    <p>With a full user flow, I wrote a script including utterances and prompts that could be used for the Alexa Developer Console. I further iterated on this using proactive information strategies and tapered prompts.</p>                                        
+                </section>
+                
+                <section id="#testing" class="l-max-width">
+                    <h2>User Testing</h2>
+                    
+                    <p>For user testing, I set up Wizard of Oz usability tests with five participants. A test plan was created where I established objectives.</p>
+                    
+                    <div class="insight_list">
+                        <div class="insight_list-item">
+                            <p class="takeaway">Test Objectives</p>
+                            <p>Do participants want to find and cook new recipes?</p>
+                            <p>What utterances are commonly used when trying to find a new recipe?</p>
+                            <p>Does the participant experience any pain points during the interaction of trying to find a recipe?</p>
+                            <p>Observe participants’ reactions/interactions with the system persona name of "Roux".</p>
+                        </div>
+                        <div class="insight_list-item">
+                            <p class="takeaway">Method</p>
+                            <p>Five (5) moderated in-person “Wizard of Oz” style usability tests. The participant would communicate with me directly and I would respond to them as Roux within the confines of the voice script written. Included a short briefing, tasks, and a debriefing.</p>
+                            <p>Participants were asked to measure the ease of each task using the single ease 7-point rating scale.</p>
+                        </div>                       
+                    </div>
+                    
+                    <p>Audio transcripts were compiled and I synthesized the data into an affinity map. <a href="">View the affinity map here</a>.</p>
+                    
+                    <p>Using the affinity map, I created a rainbow spreadsheet to assist with pinpointing key areas for improvement. <a href="">You can view the rainbow spreadsheet here</a>.</p>
+                    
+                    <p>I updated my voice scripts based on the testing results. This included adding utterances for more polite verbiage such a "may I", adding instructions for how to handle compound ingredient requests, and instructions for error handling that keeps users progressing.</p>
+                    
+                    <p>You can <a href="">view the final voice script for Cooking With Roux here</a>.</p>                                        
+                </section>
+                
+                <section id="#reflect" class="l-max-width">
+                    <h2>Reflect</h2>
                     
                     <module href="/components/morework.html" locals='{"roux": "is-active"}'></module>
-                </section>                                
+                </section>
+                
             </div>            
         </main>
         <footer>
