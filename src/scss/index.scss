@@ -2,6 +2,7 @@
 @import 'mixins.scss';
 @import 'bootstrapClasses.scss';
 @import 'general.scss';
+@import 'images.scss';
 @import 'icons.scss';
 @import 'resume.scss';
 @import 'backtotop.scss';
@@ -141,53 +142,6 @@
     line-height: 0;
 }
 
-/* Video Button */
-.video {
-    display: inline-flex;
-    align-items: center;
-    padding-top: 1rem;
-    line-height: 0;
-    &:focus,
-    &:hover {
-        .icon-youtube {
-            background-position: 0 -24px;
-            @media ( min-width: 768px ) {
-                background-position: 0 -32px;
-            }
-        }
-        .icon-download {
-            background-position: 0 -32px;
-        }
-    }
-    span {
-        margin-left: 8px;
-        @include fontGrow;
-    }
-}
-
-/* Icon List Display */
-.icon-list {
-    margin: 0;
-    padding: .5rem 0 1.5rem;    
-    list-style-type: none;
-    li {
-        display: flex;
-        align-items: center;
-        margin-top: 1rem;
-        .icon {
-            flex: 0 0 24px;
-            margin: 8px;
-            @media ( min-width: 768px ) {
-                flex: 0 0 32px;
-            }
-        }
-        span {
-            margin-left: 8px;
-            @include fontGrow;
-        }
-    }
-}
-
 /* Insight Cards with Icons */
 .insight_container {
     padding: 1rem 0 2.5rem;
@@ -239,41 +193,40 @@
     }
 }
 
-/* Images & Hero Banners */
-.hero_container {
-    padding-top: 2.5rem;
-    height: 390px;
-    width: 100%;
-    overflow: hidden;
-    img {
-        position: relative;
-        top: 0;
-        left: 50%;
-        width: 1156px;
-        transform: translateX(-578px);
+/* Story Lists */
+.list_box {
+    max-width: 763px;
+    margin-top: 1.5rem;    
+    border-radius: 6px;
+    border: 1px solid $undersea;
+    p {
+        margin-bottom: .5rem;
+        padding: 1rem;
+        background-color: $undersea;
+        color: $white;
+        font-weight: 700;
     }
-}
-.img_container {
-    max-width: 100%;    
-    padding-top: 2.5rem;
-    img {
-        display: block;
-        width: 100%;
+    ul {
+        margin-bottom: 1.5rem;
+        padding: 0 1.5rem 0 2.5rem;
+        li {
+            @include fontGrow;
+            padding-top: .5rem;            
+        }
+        .none {
+            list-style-type: none;
+            font-style: italic;
+        }
+    }
+    + p {
+        padding-top: 2.5rem;
     }
 }
 
-figure {
-    max-width: 763px;
-    padding-top: 2.5rem;
-    img {
-        display: block;
-        width: 100%;        
-    }
-    figcaption {
+
+.note {
+    li {
+        @include fontGrow;
         padding-top: .5rem;
-        font-style: italic;
     }
-}
-figure.is-large {
-    max-width: 100%;
 }

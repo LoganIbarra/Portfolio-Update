@@ -1,0 +1,39 @@
+/* Images & Hero Banners */
+.hero_container {
+    padding-top: 2.5rem;
+    height: 390px;
+    width: 100%;
+    overflow: hidden;
+    img {
+        position: relative;
+        top: 0;
+        left: 50%;
+        width: 1156px;
+        transform: translateX(-578px);
+    }
+}
+.img_container {
+    max-width: 100%;    
+    padding-top: 2.5rem;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+figure {
+    max-width: 763px;
+    padding-top: 2.5rem;
+    img {
+        display: block;
+        width: 100%;        
+    }
+    figcaption {
+        @include fontGrow;
+        padding-top: .5rem;
+        font-style: italic;
+    }
+}
+figure.is-large {
+    max-width: 100%;
+}
