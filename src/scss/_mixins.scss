@@ -1,8 +1,0 @@
-@mixin fontGrow {
-    font-size: .875rem;
-    line-height: 1.714285;
-    @media ( min-width: 768px ) {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-}
