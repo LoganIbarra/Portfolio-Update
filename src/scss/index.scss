@@ -27,10 +27,18 @@
                 background-color: $terracotta;                
             }
             .is-small .btn-link {
-                text-decoration: none;            
+                text-decoration: none;
+                color: $leather;
             }
         }        
-    }   
+    }
+    .card-img-top {
+        position: relative;
+        top: 0;
+        left: 50%;
+        width: 549px;
+        transform: translateX(-274.5px);
+    }
     .btn-primary {        
         padding: .75rem 16px;        
         line-height: 1.285715;        
@@ -48,14 +56,12 @@
     .card-body {
         padding: 1.5rem 12px 0 0;       
     }
+    .card-img-top {
+        width: 232px;
+        transform: translateX(-116px);
+    }
 }
-.card-img-top {
-    position: relative;
-    top: 0;
-    left: 50%;
-    width: 549px;
-    transform: translateX(-274.5px);
-}
+
 .btn-wrap {
     padding: 2.5rem 0;
     text-align: center;
@@ -66,9 +72,10 @@
 .card-footer .btn-link {
     position: relative;
     padding: 0 24px 0 0;
-    color: $leather;
+    color: $terracotta;
     font-size: .875rem;    
-    font-weight: 600;
+    font-weight: 700;
+    text-align: left;
     &::after {
         content: '';
         position: absolute;
@@ -79,7 +86,7 @@
         right: 0;
         width: 24px;
         height: 24px;
-    }
+    }    
 }
 
 /* Quote Section */
@@ -224,10 +231,26 @@
     }
 }
 
-
 .note {
     li {
         @include fontGrow;
         padding-top: .5rem;
+    }
+}
+
+/* About Page */
+.about_info {
+    align-items: center;
+    max-width: 763px;
+    .img_container {
+        margin: 1.5rem auto 0;
+        max-width: 200px;
+        padding-top: 0;        
+        @media ( min-width: 576px ) {
+            margin: 0 0 0 auto;            
+        }
+        img {
+            border-radius: 3px;
+        }
     }
 }
