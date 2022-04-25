@@ -143,7 +143,7 @@
 
 /* Case Study Header Section */
 .breakdown {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     padding: 4rem 0 2.5rem;
     border-bottom: 1px solid $goldenwheat;
     line-height: 0;
@@ -253,4 +253,17 @@
             border-radius: 3px;
         }
     }
+}
+
+/* Appendix */
+.appendix {
+    @include fontGrow;
+    list-style-type: decimal;
+    li {
+        padding-left: .25rem;
+        padding-top: .5rem;
+        &:first-child {
+            padding-top: 0;
+        }
+    }    
 }
