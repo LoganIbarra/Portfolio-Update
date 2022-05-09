@@ -24,6 +24,7 @@
         height: 100%;
         text-decoration: none;
         color: $black;
+        transition: transform .3s;
         &:focus,
         &:hover {            
             .btn-primary {
