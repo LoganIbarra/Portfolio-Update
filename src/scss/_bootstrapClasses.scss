@@ -44,21 +44,29 @@
     box-shadow: $shadow;
     border-radius: 3px;
     background-color: $lightsand;
-    overflow: hidden;    
+    overflow: hidden;
+    &:after {
+        display: block;
+        content: '';
+        border-bottom: 3px solid $darkblue;
+        transform: scaleX(0);
+        transition: all 250ms ease-in-out;
+        transform-origin: 0% 50%;
+    }
 }
 .card-body {
     padding: 1.5rem 12px;
 }
 .card-title {
-    margin-bottom: .5rem;
+    margin-bottom: 1.5rem;
     line-height: 1.33334;
-    font-size: 1.125rem;
-    font-weight: 600;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 .card-footer {
     padding: 1rem 12px 1.5rem;
-    border-top: none;
-    background-color: $lightsand;    
+    border-top: none;    
+    background-color: $lightsand;
 }
 
 /* Carousel */
