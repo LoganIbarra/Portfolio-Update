@@ -30,3 +30,18 @@
     window.scrollTo(0, 0);
   });
 })();
+
+(function() {
+  const navList = document.querySelectorAll('.scroll-link');
+
+  navList.forEach((element) => {
+    const targetId = element.getAttribute('href').replace('#', '');
+    const target = document.getElementById(targetId);
+    const offset = 80;
+    element.addEventListener('click', (e) => {
+      e.preventDefault();        
+      const targetDistance = target.offsetTop;
+      window.scrollTo(0, targetDistance - offset);
+    });
+  });
+})();

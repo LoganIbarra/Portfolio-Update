@@ -4,30 +4,29 @@
 		<module href="/components/head.html"></module>
         <title>Logan Ibarra | Appendix - Cooking With Roux</title>
 	</head>
-	<body>
-        <module href="/components/header-nav.html"></module>        				
+	<body data-bs-spy="scroll" data-bs-target="#rouxapp-nav" data-bs-offset="108" tabindex="0">
+        <module href="/components/header-nav.html" locals='{"subrouxapp": "is-active"}'></module>        				
         <main>            
             <div class="container-fluid">    
-                <section id="#aprende" class="l-max-width">
+                <section id="aprende" class="l-max-width">
                     <h1>Appendix - Cooking With Roux</h1>
                     <div class="breakdown">
-                        <ul class="appendix">
-                            <li><a href="#proto_persona">Proto-persona for Morgan</a></li>
-                            <li><a href="#system_persona">System Persona - Roux</a></li>
-                            <li><a href="#needs_stories">User Needs &amp; Stories</a></li>
-                            <li><a href="#dialogues">Sample Dialogues</a></li>
-                            <li><a href="#full_exp">Full Experience Sample Dialogue</a></li>
+                        <ul class="appendix">                            
+                            <li><a class="scroll-link" href="#personas">Personas</a></li>                            
+                            <li><a class="scroll-link" href="#needs_stories">User Needs &amp; Stories</a></li>
+                            <li><a class="scroll-link" href="#dialogues">Sample Dialogues</a></li>                            
 <!--
-                            <li><a href="#user_flow">User Flow</a></li>
-                            <li><a href="#affinity_map">Affinity Map</a></li>
-                            <li><a href="#rainbow_spread">Rainbow Spreadsheet</a></li>
+                            <li><a class="scroll-link" href="#user_flow">User Flow</a></li>
+                            <li><a class="scroll-link" href="#affinity_map">Affinity Map</a></li>
+                            <li><a class="scroll-link" href="#rainbow_spread">Rainbow Spreadsheet</a></li>
 -->
-                            <li><a href="#voice_script">Voice Script</a></li>
+                            <li><a class="scroll-link" href="#voice_script">Voice Script</a></li>
                         </ul>
                     </div>                                                          
                 </section>
             
-                <section id="#resources" class="l-max-width">                    
+                <section class="l-max-width">
+                    <h3 id="personas">Personas</h3>
                     <figure id="proto_persona" style="max-width: 612px;">
                         <img srcset="images/roux/persona_morgan@2x.jpg 2x" src="images/roux/persona_morgan.jpg" alt="Shawn Persona">
                         <figcaption>Morgan, Proto-Persona for Cooking With Roux</figcaption>
@@ -37,56 +36,54 @@
                         <img srcset="images/roux/persona_roux@2x.jpg 2x" src="images/roux/persona_roux.jpg" alt="Roux System Persona">
                         <figcaption>Roux, System Persona for Cooking With Roux</figcaption>
                     </figure>                                        
-                    
-                    <div id="needs_stories">                                        
-                        <div class="list_box">
-                            <p>Provide recipes for breakfast, lunch, dinner, and snacks:</p>
-                            <ul>
-                                <li>As a busy professional, I want to search for simple breakfast recipes on the weekend to maximize my free time.</li>
-                                <li>As a user, I want to find recipes that can be utilized for meal prep or leftovers for lunches so I can save time getting ready in the morning.</li>
-                                <li>As the user Morgan, I want to find new dinner recipes to prepare; so I don’t fall back on the same meals after a long day.</li>
-                                <li>When I am driving home from work, I want dinner recipe options so I can stop by the store and grab ingredients if necessary.</li>
-                            </ul>
-                        </div>
-                        <div class="list_box">
-                            <p>Use the recipe while cooking:</p>
-                            <ul>
-                                <li>While preparing my meal, I want ingredients listed in groupings so that I don’t get overwhelmed or have to listen to long lists of items.</li>
-                                <li>As the user Morgan, I want instructions provided in a sequential, efficient fashion to feel confident I’m doing things correctly.</li>
-                                <li>As a user, I want the option to repeat any instructions if I need clarification or don’t hear it properly.</li>
-                                <li>While multitasking, I want to be the one to push the instructions forward so I can prepare the meal at my own pace.</li>
-                                <li>As a user, I want clear, descriptive instructions where I can easily understand what I’m trying to achieve.</li>
-                            </ul>
-                        </div>
-                    </div>                                       
-                    
-                    <div id="dialogues">
-                        <div class="list_box">
-                            <p>As a busy professional, I want to search for simple breakfast recipes on the weekend to maximize my free time.</p>
-                            <ul>
-                                <li>U: Recommend a brakfast recipe.</li>
-                                <li>S: Certainly! We can prepare a tuna frittata, a hearty egg dish with potatoes and dollops of sour cream baked in. Cook time is 25 minutes. How does this sound?</li>
-                                <li>U: Can you recommend something faster?</li>
-                                <li>S: Of course. I have a recipe for avocado toast, topped with a fried egg and sprouts. Cook time is 10 minutes. Say ‘Get Started’ or ‘More Options.’</li>
-                                <li>U: Get started.</li>
-                            </ul>
-                        </div>                    
-                        <div class="list_box">
-                            <p>As a user, I want the option to repeat any instructions if I need clarification or don’t hear it properly.<br><i>The user is progressing through a recipe with the help of the assistant.</i></p>
-                            <ul>
-                                <li>S: Step two, add diced potatoes to the heated pan with olive oil and cook until they start to brown.</li>
-                                <li>U: (Alt 1) Repeat.</li>
-                                <li>U: (Alt 2) Repeat that.</li>
-                                <li>U: (Alt 3) Repeat step two.</li>
-                                <li>S: Step two, add diced potatoes to the heated pan with olive oil and cook until they start to brown.</li>
-                                <li class="none">The user completes the step and is ready to proceed.</li>
-                                <li>U: (Alt 1) Next.</li>
-                                <li>U: (Alt 2) Next step.</li>
-                            </ul>
-                        </div>
-                    </div>                                        
-                    
-                    <figure id="full_exp">
+                                        
+                    <h3 id="needs_stories">User Stories</h3>
+                    <div class="list_box">
+                        <p>Provide recipes for breakfast, lunch, dinner, and snacks:</p>
+                        <ul>
+                            <li>As a busy professional, I want to search for simple breakfast recipes on the weekend to maximize my free time.</li>
+                            <li>As a user, I want to find recipes that can be utilized for meal prep or leftovers for lunches so I can save time getting ready in the morning.</li>
+                            <li>As the user Morgan, I want to find new dinner recipes to prepare; so I don’t fall back on the same meals after a long day.</li>
+                            <li>When I am driving home from work, I want dinner recipe options so I can stop by the store and grab ingredients if necessary.</li>
+                        </ul>
+                    </div>
+                    <div class="list_box">
+                        <p>Use the recipe while cooking:</p>
+                        <ul>
+                            <li>While preparing my meal, I want ingredients listed in groupings so that I don’t get overwhelmed or have to listen to long lists of items.</li>
+                            <li>As the user Morgan, I want instructions provided in a sequential, efficient fashion to feel confident I’m doing things correctly.</li>
+                            <li>As a user, I want the option to repeat any instructions if I need clarification or don’t hear it properly.</li>
+                            <li>While multitasking, I want to be the one to push the instructions forward so I can prepare the meal at my own pace.</li>
+                            <li>As a user, I want clear, descriptive instructions where I can easily understand what I’m trying to achieve.</li>
+                        </ul>
+                    </div>                                                          
+                                        
+                    <h3 id="dialogues">Sample Dialogues</h3>
+                    <div class="list_box">
+                        <p>As a busy professional, I want to search for simple breakfast recipes on the weekend to maximize my free time.</p>
+                        <ul>
+                            <li>U: Recommend a brakfast recipe.</li>
+                            <li>S: Certainly! We can prepare a tuna frittata, a hearty egg dish with potatoes and dollops of sour cream baked in. Cook time is 25 minutes. How does this sound?</li>
+                            <li>U: Can you recommend something faster?</li>
+                            <li>S: Of course. I have a recipe for avocado toast, topped with a fried egg and sprouts. Cook time is 10 minutes. Say ‘Get Started’ or ‘More Options.’</li>
+                            <li>U: Get started.</li>
+                        </ul>
+                    </div>                    
+                    <div class="list_box">
+                        <p>As a user, I want the option to repeat any instructions if I need clarification or don’t hear it properly.<br><i>The user is progressing through a recipe with the help of the assistant.</i></p>
+                        <ul>
+                            <li>S: Step two, add diced potatoes to the heated pan with olive oil and cook until they start to brown.</li>
+                            <li>U: (Alt 1) Repeat.</li>
+                            <li>U: (Alt 2) Repeat that.</li>
+                            <li>U: (Alt 3) Repeat step two.</li>
+                            <li>S: Step two, add diced potatoes to the heated pan with olive oil and cook until they start to brown.</li>
+                            <li class="none">The user completes the step and is ready to proceed.</li>
+                            <li>U: (Alt 1) Next.</li>
+                            <li>U: (Alt 2) Next step.</li>
+                        </ul>
+                    </div>                                                            
+                                        
+                    <figure>
                         <img srcset="images/roux/chat@2x.jpg 2x" src="images/roux/chat.jpg" alt="Example conversation between Morgan and Roux">
                         <figcaption>Example conversation between our user, Morgan, and Roux, the system persona.</figcaption>
                     </figure>
@@ -117,8 +114,8 @@
                         <figcaption>Rainbow spreadsheet created off affinity map data. Click to view large image.</figcaption>
                     </figure>
 -->
-                    
-                    <a href="https://docs.google.com/spreadsheets/d/1uPnc6xsibrGggMN9hp6oB5YcDuoMf3eMTHdILvSgR3s/edit#gid=0" id="voice_script" class="video" target="_blank"><i class="icon icon-file">File</i><span>View the final voice script for Cooking With Roux</span></a>
+                    <h3 id="voice_script">Voice Script</h3>
+                    <a href="https://docs.google.com/spreadsheets/d/1uPnc6xsibrGggMN9hp6oB5YcDuoMf3eMTHdILvSgR3s/edit#gid=0" class="video" target="_blank"><i class="icon icon-file">File</i><span>View the final voice script for Cooking With Roux</span></a>
                 </section>                
                                
                 <module href="/components/morework.html" locals='{"roux": "is-active"}'></module>

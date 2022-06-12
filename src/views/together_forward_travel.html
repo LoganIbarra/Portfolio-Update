@@ -4,17 +4,18 @@
 		<module href="/components/head.html"></module>
         <title>Logan Ibarra | Together Forward Travel</title>
 	</head>
-	<body>
-        <module href="/components/header-nav.html"></module>        				
+	<body data-bs-spy="scroll" data-bs-target="#tft-nav" data-bs-offset="108" tabindex="0">
+        <module href="/components/header-nav.html" locals='{"subtft": "is-active"}'></module>        
         <main>            
             <div class="container-fluid">    
-                <section id="#tft" class="l-max-width">
-                    <h1>Together Forward Travel</h1>
+                <section class="l-max-width">
+                    <h1 id="tft">Together Forward Travel</h1>
                     <div class="breakdown">
                         <p><strong>Role:</strong> UX Researcher and Designer</p>
                         <p><strong>Client:</strong> CareerFoundry UX Design (Academic)</p>
+                        <p><strong>Timeline:</strong> 4 Months</p>
                         <p><strong>Tools:</strong> Figma, Miro, Balsamiq, Procreate, UsabilityHub, OptimalSort, Google Forms, Google Sheets</p>
-                        <p>Together Forward Travel is designed to provide custom itineraries from local guides and agents. I worked on this project from conception to delivery. It showcases my ability to conduct user interviews, usability testing, and the decision-making skills to pivot when necessary. As an avid traveler, learning about others' motivations and how this app could potentially meet their needs was enjoyable.</p>  
+                        <p>Together Forward Travel showcases my ability to conduct user interviews, usability testing, and the decision-making skills to pivot when necessary. I worked on this project from conception to delivery.</p>  
                         <a href="https://www.youtube.com/watch?v=qfit-nKxUls" class="video" target="_blank"><i class="icon icon-youtube">YouTube</i><span>Watch a video of the prototype</span></a>                        
                     </div>
                     
@@ -23,9 +24,9 @@
                     </div>
                 </section>
             
-                <section id="#define" class="l-max-width">
-                    <h2>Define</h2>
-                    <p>I formulated a list of possible problems the app could solve for our travelers and how it could be helpful.</p>
+                <section class="l-max-width">
+                    <h2 id="define">Define</h2>                    
+                    <p>I was tasked with designing an app that provides custom itineraries. I formulated a list of possible problems the app could solve for our travelers and how it could be helpful.</p>
                     <p>I hypothesized that travelers:</p>
                     <ul class="icon-list">
                         <li><i class="icon icon-display icon-dollar">Dollar Sign</i><span>Find a travel agent expensive</span></li>
@@ -39,8 +40,8 @@
                     <p class="highlight">We will know this to be true when we see trips successfully planned and increased engagement on the app.</p>
                 </section>
                 
-                <section id="#research" class="l-max-width">
-                    <h2>Research</h2>
+                <section class="l-max-width">
+                    <h2 id="research">Research</h2>
                     <p>I <a href="images/tft/competitive_analysis.pdf" target="_blank">conducted competitor research</a> on two companies that provide travel customization services, Journy and Mr. Hudson. This included company structure, funding, strategies, market advantage, social media presence, and areas for opportunity.</p>
                     <p>I <strong>created user stories focused</strong> on key functionalities I currently thought would be helpful for travelers. These would establish some preliminary app expectations to keep in mind until confirmed through user research.</p> 
                     <p>I <strong>established research goals and surveyed 35 participants</strong> using Google Forms. Participants were recruited through social media and had traveled recently or planning future travel. The survey was a quick and effective way to obtain simple data on people's travel processes and frequency.</p> 
@@ -123,8 +124,8 @@
                     <p>I established initial user flows and a site map to visualize necessary functionalities. Before proceeding with these, I <strong>performed a card sort using OptimalSort</strong> with nine users with my menu naming conventions. I wanted to test how intuitive the navigation was. The sorting was a quick, inexpensive way to simplify my names and structure.</p>                                        
                 </section>
                 
-                <section id="#wireframes" class="l-max-width">
-                    <h2>Wireframes</h2>
+                <section class="l-max-width">
+                    <h2 id="wireframes">Wireframes</h2>
                     <p>With my research in hand, I began with some <a href="tft_appendix.html#tft_wireframe_carousel" target="_blank">low-fidelity wireframes</a>. I also created wireframes for large device types to visualize how the elements would scale if necessary.</p>                    
                     <p>I evaluated the low-fidelity wireframes and decided to exchange the panel navigation for bottom navigation. The panel navigation was not convenient and hid items behind a menu. I wanted to pad the menu with unnecessary links to fill it out, which was counterproductive to a good experience. Changing the navigation and user flow required additional development time, but addressing the issue in earlier design stages would ideally provide a better experience later.</p>
                     
@@ -145,8 +146,8 @@
                     </figure>
                 </section>
                 
-                <section id="#usertesting" class="l-max-width">
-                    <h2>User Testing</h2>
+                <section class="l-max-width">
+                    <h2 id="usertesting">User Testing</h2>
                     <p>It was time to perform usability tests to observe how participants navigated the app and how they added trip requests. The usability tests would confirm or deny if the structure and navigational updates were a move in the right direction.</p>
                     
                     <p>I <strong>prepared a test plan, script, and consent form for six (6) moderated in-person usability tests</strong>. I recruited participants from my professional network and social media who were within the age demographic, used mobile apps, and had traveled recently or were planning a trip.</p>
@@ -162,8 +163,8 @@
                     <p>Pain points included the onboarding process, buttons, and a potentially unnecessary "save" function.</p>
                 </section>
                 
-                <section id="#usertesting" class="l-max-width">
-                    <h2>Iterate</h2>
+                <section class="l-max-width">
+                    <h2 id="iterate">Iterate</h2>
                     <p>I worked through my rainbow spreadsheet, making updates as prioritized by severity, frequency, and an approximate timeline.</p>
                     <p>A high-severity issue included how participants didn’t swipe through the onboarding carousel, which led to confusion later as to what the service was offering.</p>
                     <p>I adjusted the onboarding to a vertical scroll layout and removed unnecessary wording.</p>
@@ -171,8 +172,8 @@
                     <p>16 out of 25 participants preferred the “free” button wording, and I <a href="tft_appendix.html#onboarding" target="_blank">updated the button to reflect this</a>.</p>                                       
                 </section>
                 
-                <section id="#design" class="l-max-width">
-                    <h2>Design</h2>
+                <section class="l-max-width">
+                    <h2 id="design">Design</h2>
                     <p>While determining the color palette, I considered our adventurous traveler Karly. Together Forward Travel includes natural greens, a high-energy yellow-orange, and an exotic purple to evoke feelings of joy and new experiences.</p>
                     
                     <figure>
@@ -203,29 +204,28 @@
                     <a href="https://www.youtube.com/watch?v=qfit-nKxUls" class="video" target="_blank"><i class="icon icon-youtube">YouTube</i><span>Watch a video of the prototype</span></a>                                        
                 </section>
                 
-                <section id="#reflect" class="l-max-width">
-                    <h2>Reflect</h2>
+                <section class="l-max-width">
+                    <h2 id="reflect">Reflect</h2>
                     <p>Working on Together Foward Travel helped solidify my understanding of the design process from start to finish. It improved my speed and comfortability with Figma. I have a better idea of how to approach and organize my next large project.</p>
                     <p>Next time, I will formulate some of my survey questions differently. I want to ensure I am asking questions that are simple to understand while providing good data.</p>
                     <p>I also want to make sure I am returning to my research, such as my personas, regularly throughout the design process.</p>
                     <p>I am currently working on my UX writing skills and can already see areas for improvement.</p>                   
                 </section>
                 
-                <section id="#appendix" class="l-max-width">
-                    <h2>Appendix</h2>                    
+                <section class="l-max-width">
+                    <h2 id="appendix">Appendix</h2>                    
                     <ul class="appendix">
                         <li><a href="tft_appendix.html#problem_state" target="_blank">Problem Statement</a></li>
                         <li><a href="tft_appendix.html#comp_analy" target="_blank">Competitive Analysis</a></li>  
                         <li><a href="tft_appendix.html#affinity_map" target="_blank">Affinity Map 1</a></li>
                         <li><a href="tft_appendix.html#personas" target="_blank">User Personas</a></li>
                         <li><a href="tft_appendix.html#journeys" target="_blank">User Journeys</a></li>
-                        <li><a href="tft_appendix.html#content_audit" target="_blank">Content Audit - Mr. Hudson</a></li>
-                        <li><a href="tft_appendix.html#tft_wireframe_carousel" target="_blank">Low-fideltiy Wireframes</a></li>
-                        <li><a href="tft_appendix.html#mid_fidelity" target="_blank">Mid-fidelity Wireframes</a></li>
+                        <li><a href="tft_appendix.html#content_audit" target="_blank">Content Audit</a></li>
+                        <li><a href="tft_appendix.html#wireframes" target="_blank">Wireframes</a></li>                       
                         <li><a href="tft_appendix.html#affinity_map2" target="_blank">Affinity Map 2</a></li>
                         <li><a href="tft_appendix.html#rainbow_spread" target="_blank">Rainbow Spreadsheet</a></li>
-                        <li><a href="tft_appendix.html#preference" target="_blank">Preference Test Results</a></li>
-                        <li><a href="tft_appendix.html#onboarding" target="_blank">Onboarding Screen Iteration</a></li> 
+                        <li><a href="tft_appendix.html#preference" target="_blank">Preference Test</a></li>
+                        <li><a href="tft_appendix.html#onboarding" target="_blank">Onboarding Iteration</a></li> 
                         <li><a href="tft_appendix.html#colors" target="_blank">Color Palette</a></li>
                         <li><a href="tft_appendix.html#final_mocks" target="_blank">Final Mocks</a></li>
                         <li><a href="tft_appendix.html#prototype" target="_blank">Video Prototype</a></li>

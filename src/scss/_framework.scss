@@ -6,9 +6,12 @@ header.navigation {
     background-color: $lightsand;
     @media ( min-width: 768px ) {
         display: flex;
+        position: sticky;
+        top: 0;
         align-items: center;
         justify-content: space-between;
         padding: 1.5rem 8px 1.5rem 24px;
+        z-index: 1000;        
     }
 }
 nav {
@@ -25,7 +28,7 @@ nav {
         li{            
             font-family: $league-gothic;
             font-size: 2rem;
-            line-height: .9375;
+            line-height: 1;
             color: $darkblue;
             text-align: center;
             text-transform: uppercase;
@@ -34,6 +37,9 @@ nav {
             }
         }        
     }
+}
+.pagenav.is-active {
+    display: block!important;
 }
 .header_link {    
     position: relative;
@@ -47,29 +53,55 @@ nav {
         content: '';
         height: 4px;
         width: 100%;
-        margin-top: 4px;
-        background: $lightsand;
-    }    
+        background: $lightsand;       
+    }
     &:active,
-    &:focus,
-    &:hover {
+    &:focus {
+        color: $darkblue;
+    }    
+    &:hover,
+    &.active {
         color: $undersea;
         &::after {
             background: $goldenwheat;
         }
     }
 }
-.header_link.is-active {
-    color: $undersea;
-    &::after {
-        background: $goldenwheat;
+
+/* Dropdown Menu */
+.dropdown-toggle {   
+    &::after {        
+        margin: 0;
+        border: none;
+        vertical-align: 0;
     }
-    &:focus, &:hover {
-        color: $darkblue;
-        &::after {
-            background: $goldenwheat;
+}
+.dropdown-menu {
+    padding: .5rem 0;    
+    background-color: $lightsand;
+    li {        
+        text-align: left;
+        font-size: 1.5rem;
+        &:not(:last-child) {
+            margin-right: 0;
         }
     }
+}
+.dropdown-item {
+    padding: .25rem 8px;
+    color: $darkblue;
+    background-color: $lightsand;
+    &:active {
+        color: $black;
+        background-color: #e9ecef;
+    }
+    &.active {
+        color: $lightsand;
+        background-color: $undersea;
+    }
+}
+.dropdown-menu.show {
+    transform: translate(16px, 60px)!important;
 }
 
 /* Footer */

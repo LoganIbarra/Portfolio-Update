@@ -4,12 +4,12 @@
 		<module href="/components/head.html"></module>
         <title>Logan Ibarra | Cooking With Roux</title>
 	</head>
-	<body>
-        <module href="/components/header-nav.html"></module>        				
+	<body data-bs-spy="scroll" data-bs-target="#roux-nav" data-bs-offset="108" tabindex="0">
+        <module href="/components/header-nav.html" locals='{"subroux": "is-active"}'></module>          				
         <main>            
             <div class="container-fluid">    
-                <section id="#cooking" class="l-max-width">
-                    <h1>Cooking With Roux</h1>
+                <section class="l-max-width">
+                    <h1 id="cooking">Cooking With Roux</h1>
                     <div class="breakdown">
                         <p><strong>Role:</strong> UX Researcher and Voice Interface Designer</p>
                         <p><strong>Client:</strong> CareerFoundry UX Design (Academic)</p>
@@ -24,16 +24,15 @@
                     </div>
                 </section>
             
-                <section id="#define" class="l-max-width">
-                    <h2>Define</h2>
+                <section class="l-max-width">
+                    <h2 id="define">Define</h2>
                     
                     <p><i>Assumptions - Due to time limitations, assumptions were made for the following:</i></p>
                     <ul class="note">
                         <li>Users of the app for the creation of a proto-persona</li>
                         <li>Users' speaking style for the creation of the system persona</li>
                         <li>General user needs prior to interviews</li>
-                    </ul>
-                    
+                    </ul>                    
                     <p>I established my user persona, Morgan, and my system persona, Roux, to reference throughout the project.</p>
                     
                     <figure style="max-width: 612px;">
@@ -59,11 +58,11 @@
                     
                     <p>Using this, I finalized the user flow for Cooking With Roux. <a href="images/roux/userflow.pdf" target="_blank">View the user flow here</a>.</p>
                     
-                    <p>With the user flow, I wrote a script including utterances and prompts that I would transfer to the Alexa Developer Console. I further iterated on this using proactive information strategies and tapered prompts.</p>                                        
+                    <p>With the user flow, I wrote a script including utterances and prompts that I would transfer to the Alexa Developer Console. I further iterated on this using proactive information strategies and tapered prompts.</p>
                 </section>
                 
-                <section id="#testing" class="l-max-width">
-                    <h2>User Testing</h2>
+                <section class="l-max-width">
+                    <h2 id="testing">User Testing</h2>
                     
                     <p>I <strong>prepared five (5) moderated in-person Wizard of Oz usability tests</strong> and recruited participants through my professional network. The participant would communicate with me directly, and I would respond to them as Roux within the confines of the voice script. This type of test would allow me to gather data on how users were trying to find recipes and their speaking styles without spending the development time upfront.</p>
                     
@@ -76,20 +75,18 @@
                     <a href="https://docs.google.com/spreadsheets/d/1uPnc6xsibrGggMN9hp6oB5YcDuoMf3eMTHdILvSgR3s/edit#gid=0" class="video" target="_blank"><i class="icon icon-file">File</i><span>View the final voice script for Cooking With Roux</span></a>                                          
                 </section>
                 
-                <section id="#reflect" class="l-max-width">
-                    <h2>Reflect</h2>
+                <section class="l-max-width">
+                    <h2 id="reflect">Reflect</h2>
                     
                     <p>This project familiarized me with voice interface design principles and developing for systems such as Alexa. If I had more time, I would have preferred to research the user's needs and speaking styles instead of making assumptions. It was a positive experience to make decisions to progress and investigate through testing shortly after.</p>                                                  
                 </section>
                 
-                <section id="#appendix" class="l-max-width">
-                    <h2>Appendix</h2>                    
+                <section class="l-max-width">
+                    <h2 id="appendix">Appendix</h2>                    
                     <ul class="appendix">
-                        <li><a href="roux_appendix.html#proto_persona" target="_blank">Proto-persona for Morgan</a></li>
-                        <li><a href="roux_appendix.html#system_persona" target="_blank">System Persona - Roux</a></li>
-                        <li><a href="roux_appendix.html#needs_stories" target="_blank">User Needs &amp; Stories</a></li>
-                        <li><a href="roux_appendix.html#dialogues" target="_blank">Sample Dialogues</a></li>
-                        <li><a href="roux_appendix.html#full_exp" target="_blank">Full Experience Sample Dialogue</a></li>
+                        <li><a href="roux_appendix.html#personas" target="_blank">Personas</a></li>                        
+                        <li><a href="roux_appendix.html#needs_stories" target="_blank">User Stories</a></li>
+                        <li><a href="roux_appendix.html#dialogues" target="_blank">Sample Dialogues</a></li>                        
 <!--
                         <li><a href="roux_appendix.html#user_flow" target="_blank">User Flow</a></li>
                         <li><a href="roux_appendix.html#affinity_map" target="_blank">Affinity Map</a></li>

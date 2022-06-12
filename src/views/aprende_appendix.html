@@ -4,41 +4,44 @@
 		<module href="/components/head.html"></module>
         <title>Logan Ibarra | Appendix - &iexcl;Aprende!</title>
 	</head>
-	<body>
-        <module href="/components/header-nav.html"></module>        				
+	<body data-bs-spy="scroll" data-bs-target="#aprenapp-nav" data-bs-offset="108" tabindex="0">
+        <module href="/components/header-nav.html" locals='{"aprendeapp": "is-active"}'></module>          				
         <main>            
             <div class="container-fluid">    
-                <section id="#aprende" class="l-max-width">
+                <section id="aprende" class="l-max-width">
                     <h1>Appendix - &iexcl;Aprende!</h1>
                     <div class="breakdown">
                         <ul class="appendix">
-                            <li><a href="#proto_persona">Proto-persona for Allison</a></li>
-                            <li><a href="#problem_state">Problem Statement</a></li>
-                            <li><a href="#user_flow">User Flow</a></li>
-                            <li><a href="#aprende_wireframe_carousel">Wireframes</a></li>
-                            <li><a href="#revised_wire">Wireframes with Revisions</a></li>
-                            <li><a href="#prototype">Marvel Prototype</a></li>
+                            <li><a class="scroll-link" href="#proto_persona">Proto-persona</a></li>
+                            <li><a class="scroll-link" href="#problem_state">Problem Statement</a></li>
+                            <li><a class="scroll-link" href="#user_flow">User Flow</a></li>
+                            <li><a class="scroll-link" href="#wireframes">Wireframes</a></li>                            
+                            <li><a class="scroll-link" href="#prototype">Prototype</a></li>
                         </ul>
                     </div>                                                          
                 </section>
             
-                <section id="#resources" class="l-max-width">                    
-                    <figure id="proto_persona">
+                <section class="l-max-width">  
+                    <h3 id="proto_persona">Proto-persona</h3>
+                    <figure>
                         <img src="images/aprende/aprende_persona.jpg" alt="Proto Persona of Allison">
                         <figcaption>Proto-persona for Allison, our user who is learning Spanish.</figcaption>
                     </figure>
                     
-                    <div id="problem_state" class="l-max-width">
-                        <p class="highlight">Allison needs a way to review and be tested on previously learned vocabulary because this keeps her engaged and ensures she recalls the material outside her short-term memory.</p>
-                        <p class="highlight">We will know this to be true when we see Allison’s repeated use of the app and when she achieves her daily goal for vocabulary words.</p>                       
+                    <div class="l-max-width">
+                        <h3 id="problem_state">Problem Statement</h3>
+                        <p>Allison needs a way to review and be tested on previously learned vocabulary because this keeps her engaged and ensures she recalls the material outside her short-term memory.</p>
+                        <p>We will know this to be true when we see Allison’s repeated use of the app and when she achieves her daily goal for vocabulary words.</p>                       
                     </div>
-                                        
-                    <figure id="user_flow">
+                    
+                    <h3 id="user_flow">User Flow</h3>
+                    <figure>
                         <img src="images/aprende/aprende_user_flow.jpeg" alt="User Flow">
                         <figcaption>User flow for Allison to reach daily study goal.</figcaption>
                     </figure>
                     
-                    <div id="aprende_wireframe_carousel" class="carousel carousel-dark slide" data-bs-interval="false">
+                    <h3 id="wireframes">Wireframes</h3>
+                    <div class="carousel carousel-dark slide" data-bs-interval="false">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#aprende_wireframe_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#aprende_wireframe_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -84,19 +87,18 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
+                                       
+                    <figure>
+                        <img src="images/aprende/aprende_wire_update01.jpg" alt="Updated wireframe of the login process">
+                        <figcaption>After selecting "Continue As Guest," the updated splash screen changed to a popup with the account creation reminder.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/aprende/aprende_wire_update03.jpg" alt="Updated wireframe showing the bottom navigation changes">
+                        <figcaption>The bottom navigation now includes the completed lessons.</figcaption>
+                    </figure>                 
                     
-                    <div id="revised_wire">
-                        <figure>
-                            <img src="images/aprende/aprende_wire_update01.jpg" alt="Updated wireframe of the login process">
-                            <figcaption>After selecting "Continue As Guest," the updated splash screen changed to a popup with the account creation reminder.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/aprende/aprende_wire_update03.jpg" alt="Updated wireframe showing the bottom navigation changes">
-                            <figcaption>The bottom navigation now includes the completed lessons.</figcaption>
-                        </figure>                    
-                    </div>
-                                        
-                    <a href="https://marvelapp.com/prototype/6h27egc/screen/76438147" id="prototype" class="video" target="_blank"><i class="icon icon-youtube">Video</i><span>View the prototype in Marvel</span></a> 
+                    <h3 id="prototype">Prototype</h3>
+                    <a href="https://marvelapp.com/prototype/6h27egc/screen/76438147" class="video" target="_blank"><i class="icon icon-youtube">Video</i><span>View the prototype in Marvel</span></a> 
                 </section>                                
                 
                                
