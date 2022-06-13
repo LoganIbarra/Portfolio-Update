@@ -4,12 +4,19 @@
 		<module href="/components/head.html"></module>
         <title>Logan Ibarra | Appendix - &iexcl;Aprende!</title>
 	</head>
-	<body data-bs-spy="scroll" data-bs-target="#aprenapp-nav" data-bs-offset="108" tabindex="0">
-        <module href="/components/header-nav.html" locals='{"aprendeapp": "is-active"}'></module>          				
+	<body data-bs-spy="scroll" data-bs-target="#dropdown-nav" data-bs-offset="108" tabindex="0">
+        <module href="/components/header-nav.html" locals='{"navigation": "Appendix Navigation"}'>
+            <li><a class="dropdown-item scroll-link d-none" href="#aprende">Appendix Navigation</a></li>
+            <li><a class="dropdown-item scroll-link" href="#proto_persona">Proto-persona</a></li>
+            <li><a class="dropdown-item scroll-link" href="#problem_state">Problem Statement</a></li>                            
+            <li><a class="dropdown-item scroll-link" href="#user_flow">User Flow</a></li>
+            <li><a class="dropdown-item scroll-link" href="#wireframes">Wireframes</a></li>   
+            <li><a class="dropdown-item scroll-link" href="#prototype">Prototype</a></li>
+        </module>          				
         <main>            
             <div class="container-fluid">    
-                <section id="aprende" class="l-max-width">
-                    <h1>Appendix - &iexcl;Aprende!</h1>
+                <section class="l-max-width">
+                    <h1 id="aprende">Appendix - &iexcl;Aprende!</h1>
                     <div class="breakdown">
                         <ul class="appendix">
                             <li><a class="scroll-link" href="#proto_persona">Proto-persona</a></li>

@@ -69,7 +69,14 @@ nav {
 }
 
 /* Dropdown Menu */
-.dropdown-toggle {   
+.dropdown {
+    width: 215px;
+    text-align: right;   
+}
+.dropdown-toggle {
+    &.header_link {
+        display: inline-block;
+    }
     &::after {        
         margin: 0;
         border: none;
@@ -77,6 +84,7 @@ nav {
     }
 }
 .dropdown-menu {
+    width: 183px;
     padding: .5rem 0;    
     background-color: $lightsand;
     li {        

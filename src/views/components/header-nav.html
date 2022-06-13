@@ -1,114 +1,14 @@
  <header class="navigation">
-    <a href="index.html"><i class="icon icon-logo">Logan</i></a>
-    <nav id="header-nav" class="pagenav d-none {{main}}">
-        <ul class="nav">
-            <li class="nav-item"><a href="#work" class="nav-link header_link scroll-link">Work</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link header_link scroll-link">About</li>
-            <li class="nav-item"><a href="#resume" class="nav-link header_link scroll-link">Resume</li>
-        </ul>
-    </nav>
-    <nav id="header-nav" class="pagenav d-none {{sub}}">
-        <ul class="nav">
-            <li class="nav-item"><a href="index.html" class="nav-link header_link">Home</a></li>            
-        </ul>
-    </nav>
-    <nav id="roux-nav" class="pagenav d-none {{subroux}}">
-        <ul class="nav">
-            <li class="nav-item"><a href="index.html" class="nav-link header_link">Home</a></li>
+    <a href="index.html"><i class="icon icon-logo">Logan</i></a>    
+    <nav id="dropdown-nav" class="pagenav">
+        <ul class="nav">            
             <li class="nav-item dropdown">                
-                <a class="nav-link header_link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Project Navigation</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item scroll-link" href="#define">Define</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#testing">User Testing</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#reflect">Reflect</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#appendix">Appendix</a></li>
+                <a class="nav-link header_link dropdown-toggle drop_replace" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{{navigation}}</a>
+                <ul class="dropdown-menu drop_replace-menu">
+                    <content></content>
                 </ul>
-            </li>            
-        </ul>
-    </nav>
-    <nav id="rouxapp-nav" class="pagenav d-none {{subrouxapp}}">
-        <ul class="nav">
+            </li>
             <li class="nav-item"><a href="index.html" class="nav-link header_link">Home</a></li>
-            <li class="nav-item dropdown">                
-                <a class="nav-link header_link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Appendix Navigation</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item scroll-link" href="#personas">Personas</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#needs_stories">User Stories</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#dialogues">Sample Dialogues</a></li>                    
-                    <li><a class="dropdown-item scroll-link" href="#voice_script">Voice Script</a></li>
-                </ul>
-            </li>            
-        </ul>
-    </nav>
-    <nav id="tft-nav" class="pagenav d-none {{subtft}}">
-        <ul class="nav">
-            <li class="nav-item"><a href="index.html" class="nav-link header_link">Home</a></li>
-            <li class="nav-item dropdown">                
-                <a class="nav-link header_link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Project Navigation</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item scroll-link" href="#define">Define</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#research">Research</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#wireframes">Wireframes</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#usertesting">User Testing</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#iterate">Iterate</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#design">Design</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#reflect">Reflect</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#appendix">Appendix</a></li>
-                </ul>
-            </li>            
-        </ul>
-    </nav> 
-    <nav id="tftapp-nav" class="pagenav d-none {{tftapp}}">
-        <ul class="nav">
-            <li class="nav-item"><a href="index.html" class="nav-link header_link">Home</a></li>
-            <li class="nav-item dropdown">                
-                <a class="nav-link header_link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Appendix Navigation</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item scroll-link" href="#problem_state">Problem Statement</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#comp_analy">Competitive Analysis</a></li>                            
-                    <li><a class="dropdown-item scroll-link" href="#affinity_map">Affinity Map 1</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#personas">User Personas</a></li>   
-                    <li><a class="dropdown-item scroll-link" href="#journeys">User Journeys</a></li>                           
-                    <li><a class="dropdown-item scroll-link" href="#content_audit">Content Audit</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#wireframes">Wireframes</a></li>                    
-                    <li><a class="dropdown-item scroll-link" href="#affinity_map2">Affinity Map 2</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#rainbow_spread">Rainbow Spreadsheet</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#preference">Preference Test</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#onboarding">Onboarding Iteration</a></li>                        
-                    <li><a class="dropdown-item scroll-link" href="#colors">Color Palette</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#final_mocks">Final Mocks</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#prototype">Video Prototype</a></li>
-                </ul>
-            </li>            
-        </ul>
-    </nav> 
-    <nav id="aprende-nav" class="pagenav d-none {{subaprende}}">
-        <ul class="nav">
-            <li class="nav-item"><a href="index.html" class="nav-link header_link">Home</a></li>
-            <li class="nav-item dropdown">                
-                <a class="nav-link header_link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Project Navigation</a>
-                <ul class="dropdown-menu">                   
-                    <li><a class="dropdown-item scroll-link" href="#research">Research</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#wireframes">Design, Test, Iterate</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#reflect">Reflect</a></li>                    
-                    <li><a class="dropdown-item scroll-link" href="#appendix">Appendix</a></li>
-                </ul>
-            </li>            
-        </ul>
-    </nav>
-    <nav id="aprenapp-nav" class="pagenav d-none {{aprendeapp}}">
-        <ul class="nav">
-            <li class="nav-item"><a href="index.html" class="nav-link header_link">Home</a></li>
-            <li class="nav-item dropdown">                
-                <a class="nav-link header_link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Appendix Navigation</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item scroll-link" href="#proto_persona">Proto-persona</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#problem_state">Problem Statement</a></li>                            
-                    <li><a class="dropdown-item scroll-link" href="#user_flow">User Flow</a></li>
-                    <li><a class="dropdown-item scroll-link" href="#wireframes">Wireframes</a></li>   
-                    <li><a class="dropdown-item scroll-link" href="#prototype">Prototype</a></li>                                        
-                </ul>
-            </li>            
         </ul>
     </nav>
 </header>

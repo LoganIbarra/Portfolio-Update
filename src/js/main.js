@@ -45,3 +45,22 @@
     });
   });
 })();
+
+(function() {
+  const headMenuSpy = document.querySelector('[data-bs-spy="scroll"]');
+  const headMenuTextEle = document.querySelector('.drop_replace');    
+  const headMenuDefaultText = headMenuTextEle.textContent;
+    console.log(headMenuSpy);
+  window.addEventListener('activate.bs.scrollspy', (e, i) => {
+    console.log(e.relatedTarget);
+    if (e !== undefined) {
+      const menuTarget = e.relatedTarget;
+      const scrollLink = document.querySelector('.drop_replace-menu [href="'+ menuTarget +'"]');
+      const linkText = scrollLink.textContent;
+
+      headMenuTextEle.textContent = linkText;
+        console.log(linkText);
+        console.log(headMenuTextEle);
+    }
+  });
+})();

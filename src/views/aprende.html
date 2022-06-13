@@ -4,12 +4,18 @@
 		<module href="/components/head.html"></module>
         <title>Logan Ibarra | &iexcl;Aprende!</title>
 	</head>
-	<body data-bs-spy="scroll" data-bs-target="#aprende-nav" data-bs-offset="108" tabindex="0">
-        <module href="/components/header-nav.html" locals='{"subaprende": "is-active"}'></module>          				
+	<body data-bs-spy="scroll" data-bs-target="#dropdown-nav" data-bs-offset="108" tabindex="0">
+        <module href="/components/header-nav.html" locals='{"navigation": "Project Navigation"}'>
+            <li><a class="dropdown-item scroll-link d-none" href="#aprende">Project Navigation</a></li>
+            <li><a class="dropdown-item scroll-link" href="#research">Research</a></li>
+            <li><a class="dropdown-item scroll-link" href="#usertesting">User Testing</a></li>
+            <li><a class="dropdown-item scroll-link" href="#reflect">Reflect</a></li>                    
+            <li><a class="dropdown-item scroll-link" href="#appendix">Appendix</a></li>
+        </module>          				
         <main>            
             <div class="container-fluid">    
-                <section id="aprende" class="l-max-width">
-                    <h1>&iexcl;Aprende!</h1>
+                <section class="l-max-width">
+                    <h1 id="aprende">&iexcl;Aprende!</h1>
                     <div class="breakdown">
                         <p><strong>Role:</strong> UX Researcher and Designer</p>
                         <p><strong>Client:</strong> CareerFoundry UX Design (Academic)</p>
@@ -41,7 +47,7 @@
                 </section>
                 
                 <section class="l-max-width">
-                    <h2 id="wireframes">Design, Test, Iterate</h2>
+                    <h2 id="usertesting">User Testing</h2>
                     <p>I <a href="aprende_appendix.html#aprende_wireframe_carousel" target="_blank">sketched low-fidelity wireframes</a> and <a href="aprende_appendix.html#prototype" target="_blank">created a prototype</a> in Marvel for usability testing. The goal was to perform usability tests early in the design process to evaluate the onboarding and lesson flows.</p>
                     
                     <p>I observed two areas for improvement during testing. The onboarding process contained duplicate content and forced users to confirm their sections twice.</p>

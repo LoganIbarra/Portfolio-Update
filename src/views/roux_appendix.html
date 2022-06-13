@@ -4,12 +4,18 @@
 		<module href="/components/head.html"></module>
         <title>Logan Ibarra | Appendix - Cooking With Roux</title>
 	</head>
-	<body data-bs-spy="scroll" data-bs-target="#rouxapp-nav" data-bs-offset="108" tabindex="0">
-        <module href="/components/header-nav.html" locals='{"subrouxapp": "is-active"}'></module>        				
+	<body data-bs-spy="scroll" data-bs-target="#dropdown-nav" data-bs-offset="108" tabindex="0">
+        <module href="/components/header-nav.html" locals='{"navigation": "Appendix Navigation"}'>
+            <li><a class="dropdown-item scroll-link d-none" href="#roux_appendix">Appendix Navigation</a></li>
+            <li><a class="dropdown-item scroll-link" href="#personas">Personas</a></li>
+            <li><a class="dropdown-item scroll-link" href="#needs_stories">User Stories</a></li>
+            <li><a class="dropdown-item scroll-link" href="#dialogues">Sample Dialogues</a></li>                    
+            <li><a class="dropdown-item scroll-link" href="#voice_script">Voice Script</a></li>
+        </module>        				
         <main>            
             <div class="container-fluid">    
-                <section id="aprende" class="l-max-width">
-                    <h1>Appendix - Cooking With Roux</h1>
+                <section class="l-max-width">
+                    <h1 id="roux_appendix">Appendix - Cooking With Roux</h1>
                     <div class="breakdown">
                         <ul class="appendix">                            
                             <li><a class="scroll-link" href="#personas">Personas</a></li>                            
